@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  gui-test:
+    environment:
+      - DISPLAY=$DISPLAY
+      - ALSA_CARD=Generic
+    volumes:
+      - "/tmp/.X11-unix/:/tmp/.X11-unix/"
+    #   - "/run/user/1000/pipewire-0:/run/user/1000/pipewire-0"
+    #   - "/run/user/1000/pulse/native:/run/user/1000/pulse/native"
+    devices:
+      - /dev/snd
+    container_name: doom-test
+    image: gui-test
