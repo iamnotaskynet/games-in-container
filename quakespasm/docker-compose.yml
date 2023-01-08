@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  quake-image:
+  quake:
     environment:
       - DISPLAY=$DISPLAY
       - ALSA_CARD=Generic

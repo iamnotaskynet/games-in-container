@@ -1,4 +1,5 @@
 FROM  ubuntu:latest
+# FROM nvidia/cuda:11.4.0-base-ubuntu20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PULSE_SERVER=host.docker.internal
