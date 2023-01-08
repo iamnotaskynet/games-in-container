@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  gui-test:
+  doom-image:
     environment:
       - DISPLAY=$DISPLAY
       - ALSA_CARD=Generic
@@ -10,5 +10,5 @@ services:
     #   - "/run/user/1000/pulse/native:/run/user/1000/pulse/native"
     devices:
       - /dev/snd
-    container_name: doom-test
-    image: gui-test
+    container_name: doom-container
+    image: doom-image
