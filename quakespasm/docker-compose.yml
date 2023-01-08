@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  quake-image:
+    environment:
+      - DISPLAY=$DISPLAY
+      - ALSA_CARD=Generic
+    volumes:
+      - "/tmp/.X11-unix/:/tmp/.X11-unix/"
+    devices:
+      - /dev/snd
+    container_name: quake-container
+    image: quake-image
